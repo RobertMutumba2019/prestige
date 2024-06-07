@@ -1,0 +1,172 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>About</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+      <!-- style css -->
+      <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+      <!-- fevicon -->
+      <link rel="icon" href="{% static 'images/fevicon.png' %}" type="image/gif" />
+      <!-- font css -->
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Raleway:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="{% static 'css/jquery.mCustomScrollbar.min.css' %}">
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+   </head>
+   <body>
+      <!-- header section start -->
+      <div class="header_section">
+         <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+               <a class="navbar-brand"href="{% url 'about' %}"><h1 span style="color: white; font-weight: bold;">PRESTIGE</h1></a>
+               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav ml-auto">
+                     <li class="nav-item">
+                        <a class="nav-link" href="{% url 'index' %}">Home</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="{% url 'about' %}">About</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="{% url 'services' %}">Services</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="{% url 'gallery' %}">Vehicles</a>
+                     </li>
+                     
+                     <li class="nav-item">
+                        <a class="nav-link" href="{% url 'contact' %}">Contact</a>
+                     </li>
+                  </ul>
+                  <form class="form-inline my-2 my-lg-0">
+                  </form>
+               </div>
+            </nav>
+         </div>
+      </div>
+      <!-- header section end -->
+      <div class="call_text_main">
+         <div class="container">
+            <div class="call_taital">
+               <div class="call_text"><a href="https://www.google.com/maps/place/Shell/@0.3679292,32.5231593,21z/data=!4m15!1m8!3m7!1s0x177da544259df3ed:0xbe8dbad8d759b1ad!2sNansana+Masitowa,+Kampala!3b1!8m2!3d0.3652184!4d32.5224236!16s%2Fg%2F1ptxjt2kk!3m5!1s0x177da5487f315a03:0x3d5c88502b875b4a!8m2!3d0.3678766!4d32.5234883!16s%2Fg%2F1tl_1fg6?entry=ttu">
+                  <i class="fa fa-map-marker" aria-hidden="true"></i><span class="padding_left_15">Location</span></a></div>
+               <div class="call_text"><a><i class="fa fa-phone" aria-hidden="true"></i><span class="padding_left_15">(+71) 8522369417</span></a></div>
+               <div class="call_text"><a><i class="fa fa-envelope" aria-hidden="true"></i><span class="padding_left_15">demo@gmail.com</span></a></div>
+            </div>
+         </div>
+      </div>
+      <!-- about section start -->
+      <div class="about_section layout_padding">
+         <div class="container">
+            <div class="about_section_2">
+               <div class="row">
+                  <div class="col-md-6"> 
+                     <div class="image_iman"><img src="{% static 'images/about-img.png' %}" class="about_img"></div>
+                  </div>
+                  <div class="col-md-6"> 
+                     <div class="about_taital_box">
+                        <h1 class="about_taital">About <span style="color: #fe5b29;">Us</span></h1>
+                        <p class="about_text">The Prestige Mobile car is established to smoothen people's life, Majority of the citizens here don't own cars and those having them, cars have issues. For example,
+                           You might find a person with a car but it can't climb hilly grounds and also others with powering it on. Our mobile platform is introduced to help and solve such scenarios. Whereby you contact us and tell us the car you want to rent, we give the price you have to pay per day and also the collateral security you must leave incase something happens we can easily do tracks on.
+                           We have a list of cars but with varrying prices. A person renting a car of his dream depends on his wallet, and before us giving you our car we need to first verify whether you know how to drive by first checking for your driving permit if still exists, then proving us by taking you on the roa and we see how perfect your are. 
+                           We first table out to you the terms and conditions of our company and also the rules we give you when given our robusted car. The word robusted is in bold meaning the quality of the car.
+                           </p>
+                        <div class="readmore_btn"><a href="{% url 'contact' %}">Reach_out more to us on contact</a></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- about section end -->
+      <!-- footer section start -->
+      <div class="footer_section layout_padding">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="footeer_logo"><img src="{% static 'images/logo.png' %}"></div>
+               </div>
+            </div>
+            <div class="footer_section_2">
+               <div class="row">
+                  <div class="col">
+                     <h4 class="footer_taital">Subscribe Now</h4>
+                     <p class="footer_text">Thank you for supporting Prestige Mobile cars.</p>
+                     <div class="form-group">
+                        <textarea class="update_mail" placeholder="Enter Your Email" rows="5" id="comment" name="Enter Your Email"></textarea>
+                        <div class="subscribe_bt"><a href="{% url 'index' %}">Subscribe</a></div>
+                     </div>
+                  </div>
+                  <div class="col">
+                     <h4 class="footer_taital">Information</h4>
+                     <p class="lorem_text">More content will be send on your email after your subscription. </p>
+                  </div>
+                  <div class="col">
+                     <h4 class="footer_taital">Helpful Links</h4>
+                     <p class="lorem_text">Always reach out to us on: rmutumba08@gmail.com </p>
+                  </div>
+                  <div class="col">
+                     <h4 class="footer_taital">Invesments</h4>
+                     <p class="lorem_text">It's a global company with a commitment of developing the ghetto places of the country </p>
+                  </div>
+                  <div class="col">
+                     <h4 class="footer_taital">Contact Us</h4>
+                     <div class="location_text"><a href="https://www.google.com/maps/place/Shell/@0.3679292,32.5231593,21z/data=!4m15!1m8!3m7!1s0x177da544259df3ed:0xbe8dbad8d759b1ad!2sNansana+Masitowa,+Kampala!3b1!8m2!3d0.3652184!4d32.5224236!16s%2Fg%2F1ptxjt2kk!3m5!1s0x177da5487f315a03:0x3d5c88502b875b4a!8m2!3d0.3678766!4d32.5234883!16s%2Fg%2F1tl_1fg6?entry=ttu">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i><span class="padding_left_15">Nansana</span></a></div>
+                     <div class="location_text"><a><i class="fa fa-phone" aria-hidden="true"></i><span class="padding_left_15">(+256) 777053149</span></a></div>
+                     <div class="location_text"><a><i class="fa fa-envelope" aria-hidden="true"></i><span class="padding_left_15">rmutumba08@gmail.com</span></a></div>
+                     <div class="social_icon">
+                        <ul>
+                           <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                           <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                           <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                           <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- footer section end -->
+      <!-- copyright section start -->
+      <div class="copyright_section">
+         <div class="container">
+            <div class="row">
+               <div class="col-sm-12">
+                  <p class="copyright_text">2023 All Rights Reserved. Design by <a href="https://html.design">Free Html Templates</a> Distributed By <a href="https://themewagon.com">ThemeWagon</a></p>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- copyright section end -->
+      <!-- Javascript files-->
+      <script src="{% static 'js/jquery.min.js' %}"></script>
+      <script src="{% static 'js/popper.min.js' %}"></script>
+      <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+      <script src="{% static 'js/jquery-3.0.0.min.js' %}"></script>
+      <script src="{% static 'js/plugin.js' %}"></script>
+      <!-- sidebar -->
+      <script src="{% static 'js/jquery.mCustomScrollbar.concat.min.js' %}"></script>
+      <script src="{% static 'js/custom.js' %}"></script>
+   </body>
+</html>
